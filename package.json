@@ -1,0 +1,88 @@
+{
+  "name": "myplayground",
+  "productName": "electron-react-redux-saga-typescript",
+  "version": "1.0.0",
+  "description": "My electron-react-redux-saga-typescript playground",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "tslint --project tsconfig.json --type-check --force"
+  },
+  "keywords": [],
+  "author": "urats",
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "make_targets": {
+        "win32": [
+          "squirrel"
+        ],
+        "darwin": [
+          "zip"
+        ],
+        "linux": [
+          "deb",
+          "rpm"
+        ]
+      },
+      "electronPackagerConfig": {
+        "packageManager": "yarn"
+      },
+      "electronWinstallerConfig": {
+        "name": "electron_react_three_typescript"
+      },
+      "electronInstallerDebian": {},
+      "electronInstallerRedhat": {},
+      "github_repository": {
+        "owner": "",
+        "name": ""
+      },
+      "windowsStoreConfig": {
+        "packageName": "",
+        "name": "mypgwin"
+      }
+    }
+  },
+  "dependencies": {
+    "@types/d3": "^5.0.0",
+    "@types/d3-random": "^1.1.0",
+    "@types/electron-devtools-installer": "^2.0.2",
+    "@types/react": "^16.3.11",
+    "@types/react-dom": "^0.14.20",
+    "@types/react-redux": "^5.0.16",
+    "@types/redux-actions": "^2.2.4",
+    "@types/three": "^0.91.8",
+    "d3": "^5.1.0",
+    "electron-compile": "^6.4.2",
+    "electron-devtools-installer": "^2.1.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "linear-algebra": "^3.1.4",
+    "linq-typescript": "^1.0.251",
+    "maths.ts": "^0.0.8",
+    "react": "^15.4.1",
+    "react-ace": "^6.0.0",
+    "react-dom": "^15.4.1",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-actions": "^2.3.0",
+    "redux-saga": "^0.16.0",
+    "three": "^0.91.0",
+    "tslib": "^1.4.0",
+    "typescript-fsa": "^3.0.0-beta-1",
+    "typescript-fsa-reducers": "^0.4.5",
+    "webrtc-adapter": "^6.1.5"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "electron-forge": "^5.2.0",
+    "electron-prebuilt-compile": "1.8.4",
+    "tslint": "^5.1.0",
+    "typescript": "~2.2.2"
+  }
+}
